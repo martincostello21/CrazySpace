@@ -16,4 +16,4 @@ jobs:
       image: ${{ inputs.docker_image }}
     steps:
       - name: Check for dockerenv file
-        run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
+        run: pwd 
