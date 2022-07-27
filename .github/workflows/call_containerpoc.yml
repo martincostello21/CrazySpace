@@ -10,4 +10,4 @@ jobs:
     uses: ./.github/workflows/containerpoc.yml
     # secrets: inherit (just for you Cassidy)
     with:
-      docker_image: node:14.16
+      docker_image: public.ecr.aws/v6o5y5z7/base-builder:latest
