@@ -1,0 +1,13 @@
+name: Call Container POC
+
+on:
+  push:
+    branches:
+     - 'main'
+
+jobs:
+  job1:
+    uses: ./.github/workflows/containerpoc.yml
+    # secrets: inherit (just for you Cassidy)
+    with:
+      docker_image: node:14.16
