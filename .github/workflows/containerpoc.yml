@@ -17,4 +17,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Check for dockerenv file
-        run: ls -al
+        run: ps aux
