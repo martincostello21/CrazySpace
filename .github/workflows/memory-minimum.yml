@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     container: 
       image: node:14-bullseye
-      options: --memory-reservation 1024M
+      options: --memory=1024M
     steps:
       - name: How much memory 
         run: |
