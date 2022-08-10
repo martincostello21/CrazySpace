@@ -1,0 +1,17 @@
+name: Memory Minimun Docker Image Test
+
+on:
+  push:
+    branches: main
+
+jobs:
+  container-test-job:
+    runs-on: ubuntu-latest
+    container: 
+      image: node:14-bullseye
+      options: --memory-reservation 2096M
+    steps:
+      - name: How much memory 
+        run: |
+          node -e 'console.log(v8.getHeapStatistics().heap_size_limit/(1024*1024))'
+          
